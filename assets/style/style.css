@@ -145,15 +145,27 @@ background-color:var(--color-warn);
 
 /* CARDS SECTION */
 
-.cards {
-margin: 60px ;
-}
+/* .cards {
+  ;
+} */
 
+.cards {
+	margin-top: 60px;
+}
 
 .grid__cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr ;
 	column-gap: 19px;
+}
+.cards__img {
+	height: 400px;
+	width: 100%;
+}
+.cards__img > img{
+	width: 100%;
+	object-fit: cover;
+	object-position:center ;
 }
 .cards__text {
 	font-weight: 400;
