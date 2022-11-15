@@ -29,14 +29,15 @@
 }
 .grid__cards {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr 1fr;
 }
 .grid__cards {
-width: 200px;
+  max-width: 100%;
 }
 .card__img {
-  max-width: 200px;
+  max-width: 100%;
 }
+
 }
 
 @media (max-width:390px) {
@@ -69,15 +70,37 @@ width: 200px;
   #burger:checked ~ .burger__nav {
     top: 54px;
   }
-  .grid__card {
+  .grid__cards {
     display: grid;
+    grid-template-columns: 1fr;
     
+  }
+  .hero__text {
+    padding-top: 20px;
   }
   .hero__title {
     font-size: 23px;
   }
+  .hero__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero__cards-sm {
+    display: block;
+    padding-left: 10px;
+    text-align: center;
+}
   .img {
     width: 200px;
     height: 100%;
+  }
+  .cards__text {
+    text-align: center;
+  }
+  .cards__title {
+    text-align: center;
+  }
+  .cards__desc {
+    text-align: center;
   }
 }
